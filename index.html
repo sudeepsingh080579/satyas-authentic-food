@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#7b0f1a">
+<meta name="description" content="Satya's Authentic Home-Style Food — Made with Love, Served with Care. Full menu with tray pricing. Order: +1 609-480-8234">
+<title>Satya's — Authentic Home-Style Food | Menu & Order</title>
+<link rel="manifest" href="./manifest.json">
+<link rel="icon" href="./icons/icon-192.png">
+<link rel="apple-touch-icon" href="./icons/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+<meta property="og:title" content="Satya's — Authentic Home-Style Food">
+<meta property="og:description" content="From our kitchen to your celebration — fresh, flavorful, and made with love. Browse full menu & order.">
+<meta property="og:type" content="website">
+</head>
+<body>
+<div class="offline" id="offline">You’re offline — menu still available ✓</div>
+<div class="topbar">📞 For Order: <a data-phone-href href="tel:+16094808234" style="color:#ffec9e; font-weight:800">+1 609-480-8234</a> &nbsp;•&nbsp; Menu & pricing subject to confirmation for large/custom orders</div>
+
+<header class="brand-wrap">
+  <div class="brand">
+    <div class="brand-left" aria-hidden="true" style="background:#f5e6b8; display:grid; place-items:center; font-size:2rem">🥘</div>
+    <div class="logo">
+      <h1>Satya’s</h1>
+      <div class="sub">Authentic Home-Style Food</div>
+      <div class="script">Made with Love, Served with Care</div>
+      <div class="badge-row">
+        <div class="pill-green">For Every Celebration, We Bring Flavor to Your Table</div>
+      </div>
+      <div style="margin-top:8px" class="pill-red">Perfect for All Your Celebrations — From our kitchen to your celebration — fresh, flavorful, and made with love.</div>
+    </div>
+    <div class="brand-right" aria-hidden="true" style="background:#f5e6b8; display:grid; place-items:center; font-size:2rem">🍛</div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-card">
+    <h2>Ghar ka swaad, dil se bana</h2>
+    <p><em>— fresh, flavorful, and made with love.</em> Browse 7 categories, 60+ dishes with per-plate & tray pricing. Add to cart and order via WhatsApp or call.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#menu">View Full Menu ↓</a>
+      <a class="btn btn-ghost" data-phone-href href="tel:+16094808234">📞 Call to Order</a>
+      <a class="btn btn-green" id="cartBtn2" href="javascript:void(0)">🛒 Cart <span id="cartCount2"></span></a>
+    </div>
+    <div style="margin-top:12px; font-size:.8rem; color:#6b5a4a">🕒 On-Time Delivery Assurance • 🥬 Fresh Quality Ingredients • ❤️ Hygienic & Carefully Prepared • 🏠 Authentic Home-Style Taste</div>
+  </div>
+  <div class="hero-card" style="background: linear-gradient(135deg,#fff9ec 0%, #ffeec0 100%); display:grid; place-items:center; text-align:center">
+    <div>
+      <div style="font-size:2.2rem">🍛 🥘 🫓 🍚 🍨</div>
+      <div style="font-weight:800; color:#7b0f1a; margin-top:8px">FOR ORDER</div>
+      <a data-phone-href href="tel:+16094808234" style="font-size:1.5rem; font-weight:800; color:#143d23; text-decoration:none">📞 <span data-phone>+1 609-480-8234</span></a>
+      <div style="margin-top:8px"><a id="waHero" href="https://wa.me/16094808234?text=Hi%20Satya's%20I%20want%20to%20order" target="_blank" class="btn btn-green" style="padding:8px 14px">💬 WhatsApp Order</a></div>
+      <div style="font-size:.78rem; color:#6b5a4a; margin-top:8px">Tap to call or WhatsApp. Large/custom orders — confirm price.</div>
+    </div>
+  </div>
+</section>
+
+<div class="toolbar">
+  <label class="search"><span>🔍</span><input id="search" placeholder="Search dishes — e.g., paneer, dal, puri, raita..." autocomplete="off"></label>
+  <button class="cart-btn" id="cartBtn">🛒 Cart <span class="cart-badge" id="cartCount">0</span></button>
+  <a class="btn btn-primary" style="padding:11px 16px" data-phone-href href="tel:+16094808234">📞 <span data-phone>+1 609-480-8234</span></a>
+</div>
+
+<div class="chips-wrap"><div class="chips" id="chips"></div></div>
+
+<main class="menu" id="menu" aria-live="polite"></main>
+
+<p class="legend">Tap a price (Per Plate / Small / Medium / Large Tray) to select size before adding to cart. “–” means not available in that size. Prices as on printed menu; confirm for large/custom orders.</p>
+
+<section class="features">
+  <div class="feat">🌿 <span>Authentic<br>Home-Style Taste</span></div>
+  <div class="feat">🍃 <span>Fresh<br>Quality Ingredients</span></div>
+  <div class="feat">❤️ <span>Hygienic &<br>Carefully Prepared</span></div>
+  <div class="feat">🛵 <span>On-Time<br>Delivery Assurance</span></div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="quote">“Ghar ka swaad, dil se bana — fresh, flavorful, and made with love.”</div>
+    <div class="order-box">
+      <span style="letter-spacing:1px; font-weight:700; color:#ffec9e">FOR ORDER</span>
+      <a data-phone-href href="tel:+16094808234">📞 <span data-phone>+1 609-480-8234</span></a>
+      <span style="font-size:.78rem; opacity:.85">Satya’s — Authentic Home-Style Food</span>
+    </div>
+    <div style="font-size:.78rem; opacity:.8">Menu & pricing subject to confirmation for large/custom orders. • <span id="year"></span> Satya’s. Made with ❤️</div>
+    <div style="font-size:.72rem; opacity:.6">PWA installable • Works offline • Add to Home Screen for app-like experience</div>
+  </div>
+</footer>
+
+<!-- Cart Drawer -->
+<div class="cart-drawer" id="cartDrawer">
+  <div class="cart-backdrop" id="cartBackdrop"></div>
+  <div class="cart-panel">
+    <div class="cart-head">
+      <span>🛒 Your Order</span>
+      <button id="closeCart" style="border:none;background:#fff; font-size:1.2rem; cursor:pointer">✕</button>
+    </div>
+    <div class="cart-list" id="cartList"></div>
+    <div class="cart-total">
+      <div style="display:flex; justify-content:space-between; font-weight:800; margin-bottom:10px"><span>Total</span><span id="cartTotal">$0</span></div>
+      <div style="display:grid; gap:8px">
+        <a id="waBtn" href="https://wa.me/16094808234" target="_blank" class="btn btn-green" style="width:100%">💬 Send Order on WhatsApp</a>
+        <a data-phone-href href="tel:+16094808234" class="btn btn-primary" style="width:100%">📞 Call to Confirm: <span data-phone>+1 609-480-8234</span></a>
+        <button id="clearCart" class="btn btn-ghost" style="width:100%">Clear Cart</button>
+      </div>
+      <div style="font-size:.72rem; color:#6b5a4a; margin-top:8px; text-align:center">You’ll send the itemized list via WhatsApp. Final confirmation by phone.</div>
+      <div style="font-size:.78rem; font-weight:700; text-align:center; margin-top:6px">Total: <span id="cartTotal2">$0</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- Install banner -->
+<div class="install-banner" id="installBanner">
+  <div style="font-size:1.6rem">📲</div>
+  <div style="flex:1"><strong>Install Satya's App</strong><br><span style="font-size:.82rem; color:#6b5a4a">Add to home screen for quick ordering & offline menu</span></div>
+  <button class="btn btn-primary" id="installBtn" style="padding:9px 14px">Install</button>
+  <button id="dismissInstall" style="border:none; background:none; font-size:1.1rem; cursor:pointer">✕</button>
+</div>
+
+<script src="./app.js"></script>
+</body>
+</html>
